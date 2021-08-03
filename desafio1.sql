@@ -70,8 +70,8 @@ VALUES
 ('Lance Day'),
 ('Freedie Shannon');
   
- INSERT INTO album (titulo_album, artista_id)
- VALUES
+INSERT INTO album (titulo_album, artista_id)
+VALUES
 ('Envious', 1),
 ('Exuberant', 1),
 ('Hallowed Steam', 2),
