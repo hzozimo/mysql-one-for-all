@@ -40,14 +40,18 @@ CREATE TABLE historico_de_reproducoes(
 usuario_id int not null,
 cancao_id int not null,
 foreign key(usuario_id) references usuario(usuario_id),
-foreign key(cancao_id) references cancao(cancao_id)
+foreign key(cancao_id) references cancao(cancao_id),
+constraint primary key (usuario_id, cancao_id)
 );
 
-CREATE TABLE seguindo_artistas(
-usuario_id int not null,
-artista_id int not null,
-foreign key(usuario_id) references usuario(usuario_id),
-foreign key(artista_id) references artista(artista_id)
+CREATE TABLE seguindo_artistas (
+usuario_id INT NOT NULL,
+artista_id INT NOT NULL,
+FOREIGN KEY (usuario_id)
+REFERENCES usuario (usuario_id),
+FOREIGN KEY (artista_id)
+REFERENCES artista (artista_id),
+CONSTRAINT PRIMARY KEY (usuario_id , artista_id)
 );
 
 INSERT INTO plano (nome, valor)
