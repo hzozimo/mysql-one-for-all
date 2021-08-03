@@ -116,6 +116,8 @@ SELECT 2, cancao_id from SpotifyClone.cancao where titulo_cancao like "Home Fore
 INSERT INTO historico_de_reproducoes (usuario_id, cancao_id)
 SELECT 2, cancao_id from SpotifyClone.cancao where titulo_cancao like "Words Of her Life";
 INSERT INTO historico_de_reproducoes (usuario_id, cancao_id)
+SELECT 2, cancao_id from SpotifyClone.cancao where titulo_cancao like "Reflections Of Magic";
+INSERT INTO historico_de_reproducoes (usuario_id, cancao_id)
 SELECT 2, cancao_id from SpotifyClone.cancao where titulo_cancao like "Honey, Let's Be Silly";
 INSERT INTO historico_de_reproducoes (usuario_id, cancao_id)
 SELECT 3, cancao_id from SpotifyClone.cancao where titulo_cancao like "Troubles Of My Inner Fire";
